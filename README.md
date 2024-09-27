@@ -1,2 +1,4 @@
-# jsd8-colmar-academy
-JSD#8 Assessment HTML CSS Colmar Academy - GenKX
+# JSD#8 Colmar Academy
+__Assessment HTML CSS Colmar Academy - GenKX__
+
+by Virachai Wongsena
