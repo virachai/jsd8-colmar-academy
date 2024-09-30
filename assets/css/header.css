@@ -1,0 +1,79 @@
+/* Header Section with Navigation */
+header {
+  margin: 0;
+  max-height: 64px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > div.desktop {
+  /* display: flex; */
+  align-items: center;
+  font-size: 1.4rem;
+  column-gap: 0.05rem;
+  font-weight: 300;
+  max-height: 32px;
+  text-transform: uppercase;
+  font-family: "Noto Sans";
+  letter-spacing: 0.05px;
+}
+
+header > div.desktop strong {
+  font-weight: 700;
+  color: #4a4a4a;
+  margin-right: 2px;
+}
+
+header > div.desktop img.logo {
+  min-height: 3.25rem;
+  max-height: 3.25rem;
+  transform: translateY(8%);
+}
+
+header > div.desktop a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
+header > nav.desktop .nav__list {
+  list-style: none;
+  margin: auto;
+  column-gap: 16px;
+  justify-content: flex-end;
+  max-height: 32px;
+}
+header > nav.desktop .nav__list a:visited,
+header > nav.desktop .nav__list a {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-size: 1.05rem;
+}
+header > nav.desktop .nav__list a:hover {
+  color: #000;
+}
+
+header > nav.mobile {
+  width: 100%;
+  min-width: 320px;
+}
+header > nav.mobile .nav__list {
+  list-style: none;
+  column-gap: 0;
+  justify-content: space-around;
+  max-height: 40px;
+  min-height: 32px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+header > nav.mobile .nav__list > li a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: 0 16px;
+}
+header > nav.mobile .nav__list > li a img {
+  min-height: 36px;
+  max-height: 36px;
+}
