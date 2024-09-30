@@ -48,12 +48,20 @@ main > section.information .main-text {
     align-items: flex-start;
   }
   main > section.information {
+    display: grid;
     grid-auto-flow: column;
     grid-template-columns: 60% 1fr;
     grid-template-rows: repeat(3, 210px);
     column-gap: 0;
     row-gap: 0;
     padding: 32px 0;
+    margin: 0;
+  }
+  main > section.information > .info-block {
+    display: flex;
+    flex-direction: row;
+  }
+  main > section.information > .info-block + .info-block {
     margin: 0;
   }
   main > section.information .main-image {
