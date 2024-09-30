@@ -1,0 +1,138 @@
+/* information of hero */
+main > section.information {
+  background-color: white;
+  padding: 0;
+  margin-bottom: calc(32px - 16px);
+}
+main > section.information > .info-block {
+  align-items: flex-start;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+}
+main > section.information > .info-block + .info-block {
+  margin-top: calc(64px - 16px);
+}
+main > section.information > .info-block > div {
+  padding: 16px;
+  padding-bottom: 0;
+}
+main > section.information .main-text {
+  flex-direction: column;
+}
+.info-block a {
+  text-decoration: none;
+  color: #4a90e2;
+}
+.info-block h5,
+.info-block h3 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  color: #4a4a4a;
+}
+.info-block h5 {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+.info-block img {
+  width: 100%;
+  object-fit: cover;
+  height: calc(48vw);
+}
+
+@media only screen and (min-width: 768px) {
+  main > section.information {
+    align-items: flex-start;
+  }
+  main > section.information {
+    grid-auto-flow: column;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: repeat(3, 210px);
+    column-gap: 0;
+    row-gap: 0;
+    padding: 32px 0;
+    margin: 0;
+  }
+  main > section.information .main-image {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    padding: 0 24px;
+  }
+  main > section.information .main-text {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    position: relative;
+    padding: 0 24px;
+    padding-top: 32px;
+    max-height: 210px;
+    min-height: 210px;
+  }
+  main > section.information .main-image img {
+    height: 100%;
+    width: 100%;
+    max-height: 420px;
+    min-height: 420px;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+  .info-block {
+    border: 1px solid #9b9b9b;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .info-block:hover {
+    background-color: #d8d8d8;
+  }
+  .info-block img {
+    margin: 0;
+    padding: 0;
+    margin-right: 24px;
+    max-width: 35%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center center;
+  }
+  .info-block + .info-block {
+    border-top: 0;
+  }
+  main > section.information .main-text {
+    height: 100%;
+    color: #4a4a4a;
+  }
+  main > section.information .main-text h5,
+  main > section.information .main-text h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+  }
+  main > section.information .main-text h6 {
+    margin: 0;
+    padding: 0;
+  }
+  main > section.information .main-text h2 {
+    font-size: 1.8rem;
+  }
+  main > section.information .main-text h5,
+  main > section.information .main-text h6 {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  main > section.information .main-text h6 {
+    position: absolute;
+    bottom: 0;
+  }
+  .info-block div h3 {
+    font-size: 1.4rem;
+  }
+}
