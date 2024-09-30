@@ -37,13 +37,25 @@ main > section.thesis > .container {
 main > section.thesis > .container .thesis-right-list {
   padding: 16px;
   max-height: 210px;
+  width: 100%;
 }
 main > section.thesis > .container .thesis-right-list:hover {
   background: #d8d8d8;
+  cursor: pointer;
 }
 main > section.thesis > .container .thesis-right-list .thesis-right-img {
   max-width: 35%;
   min-width: 35%;
+  overflow: hidden;
+}
+main > section.thesis > .container .thesis-right-list .thesis-right-content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+main > section.thesis > .container .thesis-right-list .thesis-right-img img {
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
 }
 main > section.thesis > .container .thesis-right-list .thesis-right-content {
   margin-left: 16px;

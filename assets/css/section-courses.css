@@ -95,5 +95,6 @@ main > section.course > .container .course__letter + .course__letter {
   }
   main > section.course .course__small:hover {
     transform: scale(1.015);
+    cursor: pointer;
   }
 }
