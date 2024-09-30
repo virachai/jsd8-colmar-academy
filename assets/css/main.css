@@ -34,11 +34,14 @@ main > section {
   background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   width: 100%;
 }
 main > section > .w-60-percent {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  display: flex;
 }
 main > section > .w-40-percent {
   margin: 0;
