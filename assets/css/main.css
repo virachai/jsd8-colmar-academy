@@ -28,6 +28,72 @@ header {
 main {
   font-family: "Noto Sans";
 }
+main > section {
+  padding: 0;
+  margin: 0;
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main > section > .w-60-percent {
+  margin: 0;
+  padding: 0;
+}
+main > section > .w-40-percent {
+  margin: 0;
+  padding: 32px 16px;
+}
+main > section > .w-60-percent img {
+  max-width: 100%;
+  min-width: 100%;
+}
+main > section button {
+  width: 100%;
+  padding: 8px 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 200px;
+  margin: 0;
+  font-size: 18px;
+  background-color: #9b9b9b;
+  border: 0;
+}
+main > section button:hover {
+  background-color: #454655;
+}
+main h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 2.1rem;
+  color: #4a4a4a;
+  line-height: 2.1rem;
+}
+main h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 1.7rem;
+  color: #4a4a4a;
+  opacity: 0.9;
+}
+main h4 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 1.3rem;
+  color: #4a4a4a;
+  opacity: 0.9;
+}
+
+main > section > .w-40-percent {
+  padding: 32px 16px;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
 
 @media only screen and (min-width: 768px) {
   .mobile {
@@ -38,5 +104,51 @@ main {
   }
   header {
     padding: 16px 24px;
+  }
+  main > section {
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    padding: 32px 0;
+  }
+  main > section > .w-60-percent {
+    padding: 0 24px;
+    max-width: 60%;
+    min-width: 60%;
+    width: 100%;
+  }
+  main > section > .w-40-percent {
+    padding: 0;
+    max-width: 40%;
+    min-width: 40%;
+    width: 100%;
+    padding-right: 24px;
+  }
+  main > section > div button {
+    max-width: 320px;
+  }
+  main h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+    font-size: 2.5rem;
+    color: #4a4a4a;
+    line-height: 2.5rem;
+  }
+  main h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    color: #4a4a4a;
+    opacity: 0.9;
+  }
+  main h4 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    opacity: 0.9;
   }
 }
