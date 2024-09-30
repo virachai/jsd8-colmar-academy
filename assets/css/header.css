@@ -6,6 +6,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  z-index: 9;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  border-bottom: 0.5px solid #f1f3f5;
+}
+main {
+  margin-top: 63px;
 }
 header > div.desktop {
   /* display: flex; */
